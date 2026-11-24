@@ -40,7 +40,7 @@ export function FleetSection({ onSelectCar }: FleetSectionProps) {
             </p>
           </div>
 
-          <div className="flex items-center gap-1.5 sm:gap-2 p-1.5 bg-surface-container-lowest rounded-full shadow-sm overflow-x-auto max-w-full">
+          <div className="flex flex-wrap sm:flex-nowrap items-center gap-2 sm:p-1.5 sm:bg-surface-container-lowest sm:rounded-full sm:shadow-sm">
             {FLEET_CATEGORIES.map((category) => {
               const isActive = selectedCategory === category;
               return (
@@ -50,8 +50,8 @@ export function FleetSection({ onSelectCar }: FleetSectionProps) {
                   onClick={() => setSelectedCategory(category)}
                   className={
                     isActive
-                      ? "px-4 sm:px-5 py-2 rounded-full font-label-md text-label-md font-bold bg-primary text-on-primary shadow-sm transition-colors whitespace-nowrap flex-shrink-0"
-                      : "px-3.5 sm:px-4 py-2 rounded-full font-label-md text-label-md font-semibold text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors whitespace-nowrap flex-shrink-0"
+                      ? "px-4 sm:px-5 py-2 rounded-full font-label-md text-label-md font-bold bg-primary text-on-primary shadow-sm transition-colors whitespace-nowrap"
+                      : "px-4 py-2 rounded-full font-label-md text-label-md font-semibold bg-surface-container-lowest sm:bg-transparent shadow-sm sm:shadow-none text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors whitespace-nowrap"
                   }
                 >
                   {category}
