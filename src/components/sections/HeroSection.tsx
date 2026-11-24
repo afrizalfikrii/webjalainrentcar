@@ -107,7 +107,7 @@ export function HeroSection({
               </label>
               <input
                 id="hero-start-date"
-                className="w-full bg-transparent font-headline-sm text-[17px] leading-7 text-on-surface font-bold mt-1 focus:outline-none cursor-pointer"
+                className="w-full bg-transparent font-headline-sm text-[17px] leading-7 text-on-surface font-bold mt-1 focus:outline-none cursor-pointer text-left [&::-webkit-date-and-time-value]:text-left"
                 type="date"
                 value={bookingSearch.startDate}
                 onChange={(e) =>
@@ -131,7 +131,7 @@ export function HeroSection({
               </label>
               <input
                 id="hero-end-date"
-                className="w-full bg-transparent font-headline-sm text-[17px] leading-7 text-on-surface font-bold mt-1 focus:outline-none cursor-pointer"
+                className="w-full bg-transparent font-headline-sm text-[17px] leading-7 text-on-surface font-bold mt-1 focus:outline-none cursor-pointer text-left [&::-webkit-date-and-time-value]:text-left"
                 type="date"
                 min={bookingSearch.startDate}
                 value={bookingSearch.endDate}
@@ -231,66 +231,66 @@ export function HeroSection({
           </div>
         </div>
 
-        <div className="w-full max-w-5xl mt-14 grid grid-cols-2 md:grid-cols-4 gap-4 p-6 bg-surface-container-lowest rounded-3xl shadow-sm">
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-2xl bg-surface-container-low flex items-center justify-center text-primary">
-              <span className="material-symbols-outlined text-[24px]">
+        <div className="w-full max-w-5xl mt-14 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 p-5 sm:p-6 bg-surface-container-lowest rounded-3xl shadow-sm">
+          <div className="flex items-center gap-3 min-w-0">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-surface-container-low flex items-center justify-center text-primary flex-shrink-0">
+              <span className="material-symbols-outlined text-[22px] sm:text-[24px]">
                 directions_car
               </span>
             </div>
-            <div>
-              <h4 className="font-headline-sm text-headline-sm font-extrabold text-on-surface">
+            <div className="min-w-0">
+              <h4 className="font-headline-sm text-[16px] sm:text-headline-sm font-extrabold text-on-surface whitespace-nowrap">
                 50+ Unit
               </h4>
-              <p className="font-body-sm text-body-sm text-on-surface-variant">
+              <p className="font-body-sm text-[12px] sm:text-body-sm text-on-surface-variant leading-snug">
                 Armada Terawat Siap Pakai
               </p>
             </div>
           </div>
 
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-2xl bg-primary-fixed/60 flex items-center justify-center text-primary">
-              <span className="material-symbols-outlined text-[24px]">
+          <div className="flex items-center gap-3 min-w-0">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-primary-fixed/60 flex items-center justify-center text-primary flex-shrink-0">
+              <span className="material-symbols-outlined text-[22px] sm:text-[24px]">
                 support_agent
               </span>
             </div>
-            <div>
-              <h4 className="font-headline-sm text-headline-sm font-extrabold text-on-surface">
+            <div className="min-w-0">
+              <h4 className="font-headline-sm text-[16px] sm:text-headline-sm font-extrabold text-on-surface whitespace-nowrap">
                 24/7 Siaga
               </h4>
-              <p className="font-body-sm text-body-sm text-on-surface-variant">
+              <p className="font-body-sm text-[12px] sm:text-body-sm text-on-surface-variant leading-snug">
                 Bantuan Teknis &amp; CS
               </p>
             </div>
           </div>
 
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-2xl bg-primary-fixed flex items-center justify-center text-primary">
-              <span className="material-symbols-outlined text-[24px]">
+          <div className="flex items-center gap-3 min-w-0">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-primary-fixed flex items-center justify-center text-primary flex-shrink-0">
+              <span className="material-symbols-outlined text-[22px] sm:text-[24px]">
                 price_check
               </span>
             </div>
-            <div>
-              <h4 className="font-headline-sm text-headline-sm font-extrabold text-on-surface">
+            <div className="min-w-0">
+              <h4 className="font-headline-sm text-[16px] sm:text-headline-sm font-extrabold text-on-surface whitespace-nowrap">
                 100% Pas
               </h4>
-              <p className="font-body-sm text-body-sm text-on-surface-variant">
+              <p className="font-body-sm text-[12px] sm:text-body-sm text-on-surface-variant leading-snug">
                 Tanpa Biaya Terselubung
               </p>
             </div>
           </div>
 
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-2xl bg-surface-container-high flex items-center justify-center text-on-surface">
-              <span className="material-symbols-outlined text-[24px]">
+          <div className="flex items-center gap-3 min-w-0">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-surface-container-high flex items-center justify-center text-on-surface flex-shrink-0">
+              <span className="material-symbols-outlined text-[22px] sm:text-[24px]">
                 sentiment_very_satisfied
               </span>
             </div>
-            <div>
-              <h4 className="font-headline-sm text-headline-sm font-extrabold text-on-surface">
+            <div className="min-w-0">
+              <h4 className="font-headline-sm text-[16px] sm:text-headline-sm font-extrabold text-on-surface whitespace-nowrap">
                 12.000+
               </h4>
-              <p className="font-body-sm text-body-sm text-on-surface-variant">
+              <p className="font-body-sm text-[12px] sm:text-body-sm text-on-surface-variant leading-snug">
                 Perjalanan Menyenangkan
               </p>
             </div>

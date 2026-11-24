@@ -42,7 +42,7 @@ export function HowItWorksSection() {
                 </p>
               </div>
               <div
-                className={`mt-6 pt-4 rounded-xl px-3 py-2 flex items-center gap-2 font-label-sm text-label-sm font-semibold ${step.footerBgClass}`}
+                className={`mt-6 pt-3.5 pb-3.5 rounded-[14px] px-3.5 flex items-center gap-2 font-label-sm text-label-sm font-semibold ${step.footerBgClass}`}
               >
                 <span className="material-symbols-outlined text-[16px]">
                   {step.badgeIcon}
